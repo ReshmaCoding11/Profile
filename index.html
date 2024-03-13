@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navigation and Contact</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <nav class="navigation-container">
+    <ul class="navigation-links">
+        <li><a href="#about-me" class="link-item" onclick="scrollToSection('#about-me')">About me</a></li>
+        <li><a href="#experience" class="link-item" onclick="scrollToSection('#experience')">Experience</a></li>
+        <li><a href="#languages-known" class="link-item" onclick="scrollToSection('#languages-known')">Languages Known</a></li>
+        <li><a href="#projects" class="link-item" onclick="scrollToSection('#projects')">Projects</a></li>
+        <li><button class="contact-button" tabindex="0">Contact me</button></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</nav>
+
+      
+    <div class="content-container">
+        <div class="content-wrapper">
+            <div class="content-flex">
+                <div class="content-column">
+                    <div class="greeting-text">
+                        <div>Hello 👋</div>
+                        <div>This is <span class="name-highlight">Reshma</span></div>
+                        <div>“Impactor”</div>
+                    </div>
+                </div>
+                <div class="image-column">
+                    <img loading="lazy" src="reshma.png" alt="Reshma's portrait" class="image-style"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="about-me" class="content-container" style="margin-bottom: -15px;">
+        <div class="content-wrapper">
+            <div class="info-section">
+                <header class="title-container">
+                    <h1 class="title">About me</h1>
+                </header>
+                <article class="description-container">
+                    <p class="description">Passionate about engineering, I'm eager to apply my knowledge and skills in real-world projects, contributing to meaningful solutions and continuously growing in the field.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience-container" style = "margin-top: -25px;">
+        <div class="experience-content">
+            <header class="title" style="margin-top: 0px;" >Experience</header>
+            <section>
+                <div class="year-title" style="margin-top: 40px;">2024</div>
+                <div class="position-title">Impactor , Psiog Digital</div>
+                <p class="experience-description">
+                    Currently, I'm gaining valuable experience as an intern at Psiog Digital, where I am proud to serve as an 'Impactor'. This opportunity allows me to apply my engineering skills in a practical setting, making a meaningful impact while furthering my professional development. 
+                </p>
+            </section>
+            <section>
+                <div class="year-title">2022</div>
+                <div class="position-title">Pilot , Vizdale</div>
+                <p class="experience-description">
+                    Trainer at Vizdale for ML, honing skills and empowering others in the field.
+                </p>
+            </section>
+            <section>
+                <div class="year-title">2022</div>
+                <div class="position-title">Internship, Vizdale</div>
+                <p class="experience-description">
+                    Interned at Vizdale, specializing in ML and NLP, enriching my skills for a future in AI.
+                </p>
+            </section>
+        </div>
+    </section>
+
+    <section id="languages-known" class="skills-container"> 
+        <h2 class="title" style="margin-top: 0px;">Languages Known</h2> 
+        <p class="skills-description">I learnt my skillsets by hands-on learnings</p> 
+        <div class="skills-images"> 
+            <img src="Language1.png" alt="Skill Image 1" class="skill-image" loading="lazy"> 
+            <img src="Language2.png" alt="Skill Image 2" class="skill-image" loading="lazy"> 
+            <img src="Language3.png" alt="Skill Image 3" class="skill-image" loading="lazy"> 
+            <img src="Language4.png" alt="Skill Image 4" class="skill-image" loading="lazy"> 
+            <img src="Language5.png" alt="Skill Image 5" class="skill-image" loading="lazy"> 
+        </div>
+    </section>
+
+    <section id="projects" class="project-section">
+        <div class="content-area">
+            <h2 class="project-title">Projects done</h2>
+            <p class="project-description">Embark on a journey through my portfolio of innovative projects.</p>
+            <div class="image-grid">
+                <div class="image-column">
+                    <a href="https://github.com/reshmarefi/HelloSnaps" target="_blank">
+                        <img src="projectimage1.png" alt="Project Image Description" class="project-image" loading="lazy" />
+                        
+                    </a>
+                
+                </div>
+                <div class="image-column">
+                    <a href="https://github.com/reshmarefi/OCR-form-" target="_blank">
+                        <img src="projectimage2.png" alt="Project Image Description" class="project-image" loading="lazy" />
+                        
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="image-grid">
+                <div class="image-column">
+                    <a href="https://github.com/reshmarefi/churnprediction" target="_blank">
+                        <img src="projectimage3.png" alt="Project Image Description" class="project-image" loading="lazy" />
+                        
+                    </a>
+                    
+                </div>
+                <div class="image-column">
+                    <a href="https://github.com/reshmarefi/BashiniApiTranslation" target="_blank">
+                        <img src="projectimage4.png" alt="Project Image Description" class="project-image" loading="lazy" />
+                        
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-container">
+        <div class="div">
+            <div class="div-2">
+                <div class="div-3">
+                    <!-- Contact Heading -->
+                    <div class="column">
+                        <div class="div-4">Contact me</div>
+                    </div>
+                    <!-- Contact Details -->
+                    <div class="column-2">
+                        <div class="div-5">
+                            <div class="div-6">Phone number: 1234567890</div>
+                            <div class="div-7">Email: example@example.com</div>
+                            <div style="margin-top: 20px;"></div>
+                            <div class="contact-right">
+                                <a href="https://in.linkedin.com/in/reshmarefi" target="_blank">
+                                    <img src="linkedin_logo.png" alt="Linkedin" class="social-image" loading="lazy">
+                                </a>
+                                <a href="https://github.com/reshmarefi" target="_blank">
+                                    <img src="github_logo.png" alt="Twitter" class="social-image" loading="lazy">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
